@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<form name="data">
+
+	<p align=center>
+		Показать все ссылки из этого кода
+	</p>
+	<!-- ............... -->
+	<p align=center>
+	<a href=https://alchemy-game.ru> 
+		Алхимия
+	</a>
+	</p>
+	
+	<p align=center>
+	<a href=https://www.loungev.com/> 
+		Вид из окна
+	</a>
+	</p>
+	
+	<p align=center>
+	<a href=http://185.15.187.14> 
+		Последняя страница интернета
+	</a>
+	</p>
+	<!-- ............... -->
+	
+	<p align=center>
+		<input type="submit" value="жамк" onclick="calculate( )" />
+	</p>
+	<!-- ............... -->
+
+</form>
+
+</body>
+
+</html> 
+
+<script language="JavaScript">
+
+function calculate( ) {
+	a=(((Array.from(document.getElementsByTagName("a"))).map(i => {return i.href})).join("<br>"));
+	
+	document.write("<p align=center>Ссылки на странице: <br><br>" + a + "</p>");
+	
+} //конец функции
+
+</script>
